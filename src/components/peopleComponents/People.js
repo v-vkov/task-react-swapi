@@ -2,18 +2,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import styled from 'styled-components';
 import PersonListItem from './PersonListItem';
+import { Title, Container } from './../../styles/global'
 
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: darkred;
-`;
-
-const Container = styled.div`
-  margin: 10px auto;
-  width: 70%;
-  text-align: center;
-`;
 
 const SearchInput = styled.input`
   width: 90%;

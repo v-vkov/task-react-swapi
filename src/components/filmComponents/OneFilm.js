@@ -1,22 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import styled from 'styled-components';
-import { Link, useParams } from "react-router-dom";
-
-const BackBtn = styled(Link)`
-  margin: 10px auto;
-  padding: 10px;
-  width: 15%;
-  font-size: 15px;
-  color: white;
-  background-color: darkred;
-  text-transform: uppercase;
-  text-decoration: none;
-  &:hover {
-    background-color: black;
-  }
-
-`;
+import { useParams } from "react-router-dom";
+import { BackBtn } from './../../styles/global'
 
 const Wrapper = styled.div`
   padding: 10px;

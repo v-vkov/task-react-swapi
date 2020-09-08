@@ -7,7 +7,7 @@ import { lightTheme, darkTheme } from './styles/theme';
 import { GlobalStyles } from './styles/global';
 
 
-const Button = styled.button`
+const ToggleBtn = styled.button`
   background-color: darkred;
   border: none;
   color: white;
@@ -16,6 +16,9 @@ const Button = styled.button`
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  &:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
 `;
 
 export default function App() {
@@ -31,7 +34,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
     <GlobalStyles/>
-    <Button onClick = {toggleTheme}>Toggle theme</Button>
+    <ToggleBtn onClick = {toggleTheme}>Toggle theme</ToggleBtn>
     <Router>
       <Switch>
         <Route path="/" exact>

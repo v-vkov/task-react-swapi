@@ -1,5 +1,5 @@
-
-import { createGlobalStyle } from 'styled-components';
+import { Link } from "react-router-dom";
+import styled, { createGlobalStyle } from 'styled-components';
 
 
 export const GlobalStyles = createGlobalStyle`
@@ -18,5 +18,30 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
   }
-
   `;
+
+export const Title = styled.h1`
+    font-size: 1.5em;
+    text-align: center;
+    color: darkred;
+`;
+
+export const Container = styled.div`
+    margin: 10px auto;
+    width: 70%;
+    text-align: center;
+`;
+
+export const BackBtn = styled(Link)`
+  margin: 10px auto;
+  padding: 10px;
+  width: 15%;
+  font-size: 15px;
+  color: white;
+  background-color: darkred;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    background-color: black;
+  }
+`;

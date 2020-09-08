@@ -1,42 +1,16 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import { BrowserRouter as Router, Switch, Route, Link, useParams } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, useParams } from "react-router-dom";
 import styled from 'styled-components';
 import Films from '../filmComponents/Films';
 import OneFilm from '../filmComponents/OneFilm';
-
-const Container = styled.div`
-  margin: 10px auto;
-  width: 70%;
-  text-align: center;
-`;
-
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: darkred;
-`;
+import { Title, Container, BackBtn } from './../../styles/global';
 
 const PersonInfo = styled.div`
   padding: 10px;
   font-size: 20px;
   cursor: pointer;
   color: black;
-`;
-
-const BackBtn = styled(Link)`
-  margin: 10px auto;
-  padding: 10px;
-  width: 15%;
-  font-size: 15px;
-  color: white;
-  background-color: darkred;
-  text-transform: uppercase;
-  text-decoration: none;
-  &:hover {
-    background-color: black;
-  }
-
 `;
 
 
