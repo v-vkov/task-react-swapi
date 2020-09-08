@@ -7,15 +7,15 @@ const Wrapper = styled.div`
   cursor: pointer;
   color: black;
   &:hover {
-    background-color: skyblue;
+    background-color: darkred;
     color: white;
   }
 `;
 
 
-export default function FilmListItem ({title, id}) {
+export default function FilmListItem ({ personId, title, filmId }) {
     return (
-      <Link to={`/${id}`} key={id}>
+      <Link to={`/${personId}/${filmId}`} key={filmId}>
         <Wrapper>{title}</Wrapper>
       </Link>
     );

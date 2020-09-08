@@ -7,8 +7,9 @@ const Wrapper = styled.div`
   padding: 10px;
   cursor: pointer;
   color: black;
+  text-decoration: none;
   &:hover {
-    background-color: skyblue;
+    background-color: darkred;
     color: white;
   }
 `;

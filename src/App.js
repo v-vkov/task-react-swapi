@@ -1,8 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import People from './components/People';
-import Person from './components/Person';
-
+import People from './components/peopleComponents/People';
+import Person from './components/peopleComponents/Person';
 
 
 export default function App() {
