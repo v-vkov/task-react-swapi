@@ -21,7 +21,7 @@ const SearchInput = styled.input`
   margin: 8px 0;
   border: none;
   border-bottom: 2px solid darkred;
-  font-size: 20px;
+  font-size: 20px; 
   &:focus, &:hover { 
     outline:none;
   }
